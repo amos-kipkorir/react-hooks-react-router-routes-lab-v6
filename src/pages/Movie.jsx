@@ -9,7 +9,7 @@ function Movie() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/movies/${id}`)
+    fetch(`http://localhost:4000/movies/${id}`)
       .then((response) => {
         if (!response.ok) throw new Error("Failed to fetch movie");
         return response.json();
